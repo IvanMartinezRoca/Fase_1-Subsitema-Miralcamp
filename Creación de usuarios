@@ -1,0 +1,12 @@
+# Creación de un usuario sin privilegios.
+net user nombre_de_usuario /add
+# Poner contraseña al usuario.
+net user nombre_de_usuario *
+# Una vez pulsemos intro nos pedira la contraseña y la confirmación de esta.
+#
+# Eliminar un usuario.
+net user nombre_de_usuario /delete
+# Agregra privilegios de administardor
+net localgroup administradores nombre_de_usuario /add
+# Eliminar los privilegios
+net localgroup administradores nombre_de_usuario /delete
